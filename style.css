@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+}
+
+main{
+    max-width:640px;
+    margin:1rem auto;
+}
+
+section {
+
+}
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Default for larger screens */
+}
+
+/* Mobile view: Single column layout */
+@media (max-width: 768px) { /* Adjust the max-width value as needed */
+    .header {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.avatar-image{
+    width: 100%;
+    max-width: 35rem;
+    /* width:35rem;
+    height:35rem; */
+}
+/* Style for the info button */
+.info-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF; /* Adjust color as needed */
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Optional styling for the back button */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745; /* Adjust color as needed */
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #218838; /* Darker shade for hover effect */
+}
